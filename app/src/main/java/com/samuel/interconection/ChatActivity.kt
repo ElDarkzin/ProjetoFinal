@@ -45,6 +45,22 @@ class ChatActivity : AppCompatActivity() {
         chatRecyclerView.layoutManager = LinearLayoutManager(this)
         chatRecyclerView.adapter = messageAdapter
 
+        sendButton.setOnClickListener {
+
+            val message = messageBox.text.toString()
+            val messageObject = Message(message,senderUid)
+
+            mDbRef.child("chats").child(senderRoom!!).child("messages").push()
+                .setValue(messageObject).addOnSuccessListener {
+                    mDbRef.child("chats").child(receiverRoom!!).child("messages").push()
+                        .setValue(messageObject)
+                }
+            messageBox.setText("")
+        }
+    }
+
+    override fun onStart() {
+        super.onStart()
         mDbRef.child("chats").child(senderRoom!!).child("message")
             .addValueEventListener(object: ValueEventListener{
                 override fun onDataChange(snapshot: DataSnapshot) {
@@ -66,18 +82,5 @@ class ChatActivity : AppCompatActivity() {
                 }
 
             })
-
-        sendButton.setOnClickListener {
-
-            val message = messageBox.text.toString()
-            val messageObject = Message(message,senderUid)
-
-            mDbRef.child("chats").child(senderRoom!!).child("messages").push()
-                .setValue(messageObject).addOnSuccessListener {
-                    mDbRef.child("chats").child(receiverRoom!!).child("messages").push()
-                        .setValue(messageObject)
-                }
-            messageBox.setText("")
-        }
     }
 }

@@ -25,6 +25,7 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/edt_backgroud"
         android:hint="@string/label_name"
+        android:textColor="@color/black"
         android:paddingLeft="10dp"
         android:textColorHint="@color/black"
         android:textStyle="bold|normal" />
@@ -34,28 +35,31 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/edt_name"
-        android:layout_marginTop="10dp"
-        android:hint="@string/label_email"
-        android:textColorHint="@color/black"
-        android:textStyle="bold|normal"
-        android:paddingLeft="10dp"
-        android:background="@drawable/edt_backgroud"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_backgroud"
+        android:hint="@string/label_email"
+        android:textColor="@color/black"
+        android:inputType="textPassword|textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold|normal" />
 
     <EditText
         android:id="@+id/edt_password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/edt_email"
-        android:layout_marginTop="10dp"
-        android:hint="@string/label_password"
-        android:textColorHint="@color/black"
-        android:textStyle="bold|normal"
-        android:background="@drawable/edt_backgroud"
-        android:paddingLeft="10dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_backgroud"
+        android:hint="@string/label_password"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold|normal" />
 
     <Button
         android:id="@+id/btnsignup"
