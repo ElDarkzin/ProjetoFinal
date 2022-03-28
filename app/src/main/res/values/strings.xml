@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">InterConected</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="label_log_in">Log In</string>
+    <string name="label_sign_up">Sign Up</string>
+    <string name="label_name">Name</string>
+    <string name="label_log_out">log out</string>
+    <string name="label_usuario_name">Usuario Name</string>
+    <string name="label_Message">Message</string>
+    <string name="label_receive">This is receive message</string>
+    <string name="label_sent">This is sent message</string>
+</resources>

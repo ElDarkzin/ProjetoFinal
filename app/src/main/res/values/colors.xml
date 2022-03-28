@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="receive">#4da6ff</color>
+    <color name="sent">#1a75ff</color>
+    <color name="blue_200">#0040ff</color>
+    <color name="blue_500">#1a1aff</color>
+    <color name="blue_700">#0000cc</color>
+    <color name="cyan_200">#4dffff</color>
+    <color name="cyan_700">#00cccc</color>
+    <color name="gray">#696969</color>
+    <color name="light_gray">#808080</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

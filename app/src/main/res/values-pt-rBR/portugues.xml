@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InterConnected</string>
+    <string name="label_email">E-mail</string>
+    <string name="label_password">Senha</string>
+    <string name="label_log_in">Conecte-se</string>
+    <string name="label_sign_up">Inscrever-se</string>
+    <string name="label_name">Nome</string>
+    <string name="label_log_out">Sair</string>
+    <string name="label_usuario_name">Nome do Usuário</string>
+    <string name="label_Message">Mensagem</string>
+    <string name="label_receive">Esta é a mensagem recebida</string>
+    <string name="label_sent">Esta é uma mensagem enviada</string>
+
+</resources>
